@@ -1,33 +1,97 @@
 body{
-    font-family: Arial, sans-serif;
+font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
-.input-container{
-    width: 300px;
-    margin: 50px auto;
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
+header h1 {
+    margin: 0;
+}
+form{
+    margin-top: 20px;
+}
 #city-input{
-    width: 70%;
+    width: 50px;
     height: 30px;
     padding: 10px;
     font-size: 18px;
     border: 1px solid #cccccc;
 }
 #get-weather-btn{
-    width: 20%;
+    width: 20px;
     height: 30px;
     padding: 10px;
     font-size: 18px;
     background-color: #4CAF50;
-    color: #fff;
+    color: #ffffff;
     border: none;
     cursor: pointer;
 }
 #get-weather-btn:hover{
     background-color: #3e8e41;
 }
-#weather-data{
-    margin-top: 20px;
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+section{
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section h2{
+    margin-top: 0;
+}
+#current-weather-description{
     font-size: 18px;
+    color: #666;
+}
+#current-temperature{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+#current-humidity{
+    font-size: 18px;
+    color: #666666;
+}
+#current-wind-speed{
+    font-size: 18px;
+    color: #666666;
+}
+#forecast-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+#forecast-table th,
+#forecast-table td{
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+#forecast-table th{
+    background-color: #f0f0f0;
+}
+#hourly-forecast-chart{
+    width: 100%;
+    height: 200px;
+}
+#weather-alerts-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#weather-alerts-list li{
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+#weather-alerts-list li:last-child{
+    border-bottom: none;
 }
