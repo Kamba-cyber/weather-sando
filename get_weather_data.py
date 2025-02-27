@@ -1,8 +1,7 @@
 import requests
 city_name = 'Lusaka'
-API_key = '3e199a94cec7db6b294fa6b38afcff94''https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_key}url = f&units=metric'
-
-
+API_key = '3e199a94cec7db6b294fa6b38afcff94'
+url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_key}&units=metric'
 
 response = requests.get(url)
 if response.status_code == 200:
