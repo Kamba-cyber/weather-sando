@@ -1,9 +1,9 @@
 body{
 font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: orangered;
 }
 header{
-    background-color: #333;
+    background-color: darkslategrey;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -26,7 +26,7 @@ form{
     height: 30px;
     padding: 10px;
     font-size: 18px;
-    background-color: #4CAF50;
+    background-color: green;
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -90,7 +90,7 @@ section h2{
 }
 #weather-alerts-list li{
     padding: 10px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid indianred;
 }
 #weather-alerts-list li:last-child{
     border-bottom: none;
