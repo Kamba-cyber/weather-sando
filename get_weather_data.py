@@ -1,4 +1,3 @@
-
 import requests
 import json
 
@@ -13,9 +12,11 @@ def get_weather_data():
 def main():
     data = get_weather_data()
     print(json.dumps(data))
-    print('weather is', data['weather'][0]['description'])
-    print('current Temperature is', data['main']['temp'])
-    print('humidity', data['main']['humidity'])
+    print('Weather is:', data['weather'][0]['description'])
+    print('Current Temperature:', data['main']['temp'], '°C')
+    print('Current Humidity:', data['main']['humidity'], '%')
+    print('Current Wind Speed:', data['wind']['speed'], 'mph')
+    print('Current Pressure:', data['main']['pressure'], 'hPa')
 
 if __name__ == '__main__':
     main()
