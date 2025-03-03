@@ -5,12 +5,21 @@
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04k="
+      crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7w=="
+        crossorigin=""></script>
+
 </head>
 <body>
+<div id="map" style="width: 600px; height: 400px;"></div>
 <header>
     <h1>Weather App</h1>
     <form>
-        <input id="city-input" type="text" placeholder="Enter city name">
+        <label for="city-input"></label><input id="city-input" type="text" placeholder="Enter city name">
         <button id="get-weather-btn">Get Weather</button>
     </form>
 </header>
