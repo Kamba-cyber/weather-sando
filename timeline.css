@@ -1,0 +1,29 @@
+/* Timeline container styles */
+.timeline-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* Timeline scrollbar styles */
+.timeline-scrollbar {
+    display: flex;
+    flex-direction: row;
+    width: 2000px; /* Adjust the width to fit all hourly forecast cards */
+}
+
+/* Hourly forecast card styles */
+.hourly-forecast-card {
+    width: 150px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Font Awesome icon styles */
+.hourly-forecast-card i {
+    font-size: 24px;
+    margin: 10px;
+}
