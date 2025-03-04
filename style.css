@@ -1,11 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: orangered;
-    background-image: linear-gradient(to bottom, orangered, #e0e0e0);
+    background-color: #4682B4;
+    background-image: linear-gradient(to bottom, #4682B4, #e0e0e0);
+    .weather-container{
+    margin: 0;
+    padding: 0;
+}
+.weather-element{
+    margin: 10px;
+    padding: 20px;
+}
 }
 
 header {
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -36,8 +44,8 @@ form {
     height: 30px;
     padding: 10px;
     font-size: 18px;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #F5F5DC;
+    color: darkslategrey;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -45,7 +53,7 @@ form {
 }
 
 #get-weather-btn:hover {
-    background-color: #3e8e41;
+    background-color: lightgreen;
 }
 
 .container {
@@ -90,4 +98,15 @@ form {
 
 #forecast-table th {
     background-color: #f0f0f0;
+}
+*{
+    box-sizing: border-box;
+}
+.weather-container{
+    margin: 0;
+    padding: 0;
+}
+.weather-element{
+    margin: 10px;
+    padding: 20px;
 }
