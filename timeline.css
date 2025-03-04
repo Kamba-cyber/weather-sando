@@ -45,16 +45,20 @@ body {
 }
 
 /* Responsive design */
-@media only screen and (max-width: 768px) {
-    .timeline-container {
-        padding: 10px;
-    }
-    .hourly-forecast-card {
-        width: 100px;
-        margin: 5px;
-        padding: 10px;
+@media (max-width: 768px) {
+    .weather-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
+
+@media (max-width: 480px) {
+    .weather-element {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
 
 @media only screen and (max-width: 480px) {
     .timeline-container {

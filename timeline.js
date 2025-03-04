@@ -19,3 +19,19 @@ timelineScrollbar.addEventListener('scroll', () => {
     const scrollPosition = timelineScrollbar.scrollLeft;
     // Update the scroll position as needed
 });
+// Get the weather container element
+const weatherContainer = document.querySelector('.weather-container');
+
+// Generate weather elements dynamically
+for (let i = 0; i < 5; i++) {
+    const weatherElement = document.createElement('div');
+    weatherElement.classList.add('weather-element');
+    weatherElement.innerHTML = `
+        <h2>Weather Element ${i + 1}</h2>
+        <p>Temperature: 75°F</p>
+        <p>Humidity: 60%</p>
+        <p>Wind Speed: 10mph</p>
+    `;
+    weatherContainer.appendChild(weatherElement);
+}
+
