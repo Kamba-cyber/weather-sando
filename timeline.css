@@ -10,6 +10,26 @@ body {
     line-height: 1.6;
     color: #032B44;
     background-color: transparent;
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:200px;
+}
+
 }
 
 /* Timeline container styles */

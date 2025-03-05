@@ -110,3 +110,70 @@ form {
     margin: 10px;
     padding: 20px;
 }
+.hourly-forecast-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 40px auto;
+}
+.table-head-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 40px auto;
+}
+
+.table-head-container th{
+    border: 1px solid #dddddd;
+    padding: 10px;
+}
+.vertical-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.day-vertical-container,
+.temperature-vertical-container,
+.weather-vertical-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.header {
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.day-vertical-container div,
+.temperature-vertical-container div,
+.weather-vertical-container div {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.day-vertical-container div:last-child,
+.temperature-vertical-container div:last-child,
+.weather-vertical-container div:last-child {
+    border-bottom: none;
+}
+
+.weather-vertical-container {
+    border-right: none;
+}
+
+
+

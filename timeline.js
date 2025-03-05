@@ -35,3 +35,42 @@ for (let i = 0; i < 5; i++) {
     weatherContainer.appendChild(weatherElement);
 }
 
+// API Key (replace with your own API key)
+const apiKey = '3e199a94cec7db6b294fa6b38afcff94';
+
+// Get the city input element
+const cityInput = document.querySelector('#city-input');
+
+// Get the cards container element
+const cardsContainer = document.querySelector('.cards-container');
+
+// Function to update the cards with new weather data
+function updateCards(data) {
+    // Clear the existing cards
+    cardsContainer.innerHTML = '';
+
+    // Loop through the weather data and create new cards
+    data.list.forEach((card, index) => {
+        const cardElement = document.createElement('div');
+        cardElement.classList.add('card');
+
+        cardElement.innerHTML = `
+            <h2>${new Date(card.dt * 1000).toLocaleTimeString()}</h2>
+            <p>Temperature: ${card.main.temp}°C</p>
+            <p>Humidity: ${card.main.humidity}%</p>
+            <p>Wind Speed: ${card.wind.speed} m/s</p>
+        `;
+
+        cardsContainer.appendChild(cardElement);
+    });
+}
+
+// Event listener for city input changes
+cityInput.addEventListener('input', (e) => {
+    const newCity = e.target.value;
+
+    // Make API call to fetch new weather data
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${newCity}&appid=${apiKey}`)
+        .then(response => response.json())
+        .then(data => updateCards(data));
+});

@@ -17,7 +17,7 @@
 <body>
 <div id="map" style="width: 200px; height: 100px;"></div>
 <header>
-    <h1>Weather App</h1>
+    <h1>WEATHER APP</h1>
     <form>
         <label for="city-input"></label><input id="city-input" type="text" placeholder="Enter city name">
         <button id="get-weather-btn">Get Weather</button>
@@ -33,21 +33,51 @@
     </section>
     <section id="forecast">
         <h2>5-Day Forecast</h2>
-        <table id="forecast-table">
-            <thead>
-            <tr>
-                <th>Day</th>
-                <th>Temperature</th>
-                <th>Weather Condition</th>
-            </tr>
-            </thead>
-            <tbody id="forecast-table-body"></tbody>
-        </table>
+      <div class="vertical-container">
+    <div class="day-vertical-container">
+        <div class="header">Day</div>
+        <div>Monday</div>
+        <div>Tuesday</div>
+        <div>Wednesday</div>
+        <div>Thursday</div>
+        <div>Friday</div>
+        <!-- Add more days as needed -->
+    </div>
+    <div class="temperature-vertical-container">
+        <div class="header">Temperature</div>
+        <div>25°C</div>
+        <div>22°C</div>
+        <div>28°C</div>
+        <div>20°C</div>
+        <div>25°C</div>
+        <!-- Add more temperatures as needed -->
+    </div>
+    <div class="weather-vertical-container">
+        <div class="header">Weather Condition</div>
+        <div>Light Rain</div>
+        <div>Overcast Clouds</div>
+        <div>Sunny</div>
+        <div>Light Rain</div>
+        <div>Partly Cloudy</div>
+        <!-- Add more weather conditions as needed -->
+    </div>
+</div>
+
+
+
+
+
+
     </section>
+
+<div class="hourly-forecast-container">
     <section id="hourly-forecast">
         <h2>Hourly Forecast</h2>
         <canvas id="hourly-forecast-chart"></canvas>
     </section>
+</div>
+
+
     <section id="weather-alerts">
         <h2>Weather Alerts</h2>
         <ul id="weather-alerts-list"></ul>
