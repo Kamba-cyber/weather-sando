@@ -74,3 +74,23 @@ cityInput.addEventListener('input', (e) => {
         .then(response => response.json())
         .then(data => updateCards(data));
 });
+
+// Get the API key and location
+const apiKey = '3e199a94cec7db6b294fa6b38afcff94';
+const location = 'Lusaka'; // or use geolocation
+
+// Fetch weather data from OpenWeatherMap API
+fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${apiKey}`)
+  .then(response => response.json())
+  .then(data => {
+    // Update the HTML with the fetched weather data
+    const weatherConditions = data.list.map(item => item.weather[0].description);
+    const days = data.list.map(item => item.dt_txt);
+    const temperatures = data.list.map(item => item.main.temp);
+
+    // Update the HTML elements with the fetched data
+    document.getElementById('weather-conditions').innerHTML = weatherConditions.join('<br>');
+    document.getElementById('days').innerHTML = days.join('<br>');
+    document.getElementById('temperatures').innerHTML = temperatures.join('<br>');
+  })
+  .catch(error => console.error(error));
